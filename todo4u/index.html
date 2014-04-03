@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Todo4U</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css">
+		<link rel="stylesheet" href="estilo.css">
+		<script src="jquery-1.11.0.js"></script>
+		<script src="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+		<script src="jaydata.min.js"></script>
+		<script src="funciones.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+		<!-- PAGINA PRINCIPAL -->
+
+		<div data-role="page" id="page_home"  data-theme="a">
+			<div data-role="header">
+				<a href="#help-panel" class="ui-btn ui-icon-bars ui-btn-icon-notext" id="help">Help</a>
+				<h1>Todo4U</h1>
+				<a href="#page_about" class="ui-btn ui-icon-info ui-btn-icon-notext" id="about-button">About</a>
+			</div>
+
+			<div data-role="main" class="ui-content">
+
+				<div data-role="panel" id="help-panel" data-display="overlay" >
+					<ul data-role="listview">
+						<h3>Help</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras bibendum elit odio, sit amet placerat ligula eleifend non. Nunc suscipit suscipit turpis, in viverra nunc adipiscing sit amet. In facilisis neque eget sapien auctor, at sagittis nibh pretium. Quisque dignissim sodales eros non semper. 
+						</p>
+						<li>
+							<a href="#page_detail" data-rel="close">Close</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<input id="input_task" type="text" placeholder="Write a task..."/>
+					</div>
+					<div class="ui-block-b">
+						<button  id="btnAdd" class="ui-btn ui-icon-plus ui-btn-icon-notext">
+							Add
+						</button>
+					</div>
+
+				</div>
+				
+				
+				<div id="lista-tareas" data-role="controlgroup">
+					
+				</div>
+				
+			</div>
+
+		</div>
+
+		<!-- PAGINA ABOUT -->
+
+		<div data-role="page" id="page_about">
+			<img src="res/icon/android/icon-96-xhdpi.png" />
+			<h2>ToDo4U</h2>
+			<p class="margin-bottom-styled">
+				The Original To-Do
+			</p>
+			<a data-rel="back" data-role="button" data-icon="delete" data-iconpos="left" id="about-close-button" class="center-button">
+				Cerrar
+			</a>
+
+		</div>
+
+	</body>
+
+</html>

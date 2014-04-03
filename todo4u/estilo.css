@@ -1,0 +1,18 @@
+* {
+	text-shadow: none;
+}
+
+
+#page_about{
+	text-align: center;
+}
+
+.center-button{
+	width:30%;
+	margin: 0 auto;
+}
+
+.margin-bottom-styled{
+	margin-bottom: 50px;
+}
+
